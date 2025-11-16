@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:flutter_bloc/flutter_bloc.dart","transitive":false},{"uri":"package:equatable/equatable.dart","transitive":false},{"uri":"package:test_effective_mobile/data/models/character_model.dart","transitive":false},{"uri":"package:test_effective_mobile/data/repository/character_repository.dart","transitive":false}],"elements":[]}

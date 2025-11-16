@@ -1,0 +1,10 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter/material.dart",
+    "package:flutter_bloc/flutter_bloc.dart",
+    "package:test_effective_mobile/presentation/bloc/favorites/favorites_bloc.dart",
+    "package:test_effective_mobile/presentation/bloc/characters/characters_bloc.dart",
+    "package:test_effective_mobile/presentation/widgets/character_card.dart"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter_bloc/flutter_bloc.dart",
+    "package:equatable/equatable.dart",
+    "package:test_effective_mobile/data/models/character_model.dart",
+    "package:test_effective_mobile/data/repository/character_repository.dart"
+  ]
+}

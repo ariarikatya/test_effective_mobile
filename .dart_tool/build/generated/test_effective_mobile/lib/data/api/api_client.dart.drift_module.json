@@ -1,0 +1,8 @@
+{
+  "elements": {},
+  "imports": [
+    "package:dio/dio.dart",
+    "package:retrofit/retrofit.dart",
+    "package:test_effective_mobile/data/models/character_model.dart"
+  ]
+}

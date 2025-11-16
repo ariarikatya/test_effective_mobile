@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:dio/dio.dart","transitive":false},{"uri":"package:retrofit/retrofit.dart","transitive":false},{"uri":"package:test_effective_mobile/data/models/character_model.dart","transitive":false}],"elements":[]}

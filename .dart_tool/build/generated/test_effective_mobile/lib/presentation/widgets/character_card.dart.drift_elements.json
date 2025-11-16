@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:flutter/material.dart","transitive":false},{"uri":"package:cached_network_image/cached_network_image.dart","transitive":false},{"uri":"package:test_effective_mobile/data/models/character_model.dart","transitive":false}],"elements":[]}

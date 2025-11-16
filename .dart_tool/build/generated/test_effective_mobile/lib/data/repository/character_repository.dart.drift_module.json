@@ -1,0 +1,9 @@
+{
+  "elements": {},
+  "imports": [
+    "package:drift/drift.dart",
+    "package:test_effective_mobile/data/api/api_client.dart",
+    "package:test_effective_mobile/data/database/database.dart",
+    "package:test_effective_mobile/data/models/character_model.dart"
+  ]
+}

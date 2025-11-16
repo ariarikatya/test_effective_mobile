@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:drift/drift.dart","transitive":false},{"uri":"package:test_effective_mobile/data/api/api_client.dart","transitive":false},{"uri":"package:test_effective_mobile/data/database/database.dart","transitive":false},{"uri":"package:test_effective_mobile/data/models/character_model.dart","transitive":false}],"elements":[]}

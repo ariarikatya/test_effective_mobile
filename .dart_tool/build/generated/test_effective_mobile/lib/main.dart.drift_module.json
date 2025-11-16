@@ -1,0 +1,14 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter/material.dart",
+    "package:flutter_bloc/flutter_bloc.dart",
+    "package:test_effective_mobile/core/di/injection.dart",
+    "package:test_effective_mobile/core/theme/app_theme.dart",
+    "package:test_effective_mobile/data/repository/character_repository.dart",
+    "package:test_effective_mobile/presentation/bloc/characters/characters_bloc.dart",
+    "package:test_effective_mobile/presentation/bloc/favorites/favorites_bloc.dart",
+    "package:test_effective_mobile/presentation/bloc/theme/theme_bloc.dart",
+    "package:test_effective_mobile/presentation/screens/home_screen.dart"
+  ]
+}

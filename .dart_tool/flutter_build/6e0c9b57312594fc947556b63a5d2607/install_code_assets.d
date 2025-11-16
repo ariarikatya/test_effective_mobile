@@ -1,0 +1,1 @@
+ /Users/ekaterinaaristova/Downloads/test_effective_mobile/.dart_tool/flutter_build/6e0c9b57312594fc947556b63a5d2607/native_assets.json: 

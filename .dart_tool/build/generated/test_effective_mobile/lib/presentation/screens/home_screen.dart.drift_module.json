@@ -1,0 +1,10 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter/material.dart",
+    "package:flutter_bloc/flutter_bloc.dart",
+    "package:test_effective_mobile/presentation/bloc/theme/theme_bloc.dart",
+    "package:test_effective_mobile/presentation/screens/characters_screen.dart",
+    "package:test_effective_mobile/presentation/screens/favorites_screen.dart"
+  ]
+}

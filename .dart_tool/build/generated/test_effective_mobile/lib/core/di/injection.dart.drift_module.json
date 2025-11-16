@@ -1,0 +1,10 @@
+{
+  "elements": {},
+  "imports": [
+    "package:dio/dio.dart",
+    "package:get_it/get_it.dart",
+    "package:test_effective_mobile/data/api/api_client.dart",
+    "package:test_effective_mobile/data/database/database.dart",
+    "package:test_effective_mobile/data/repository/character_repository.dart"
+  ]
+}

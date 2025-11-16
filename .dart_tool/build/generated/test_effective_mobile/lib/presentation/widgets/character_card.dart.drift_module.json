@@ -1,0 +1,8 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter/material.dart",
+    "package:cached_network_image/cached_network_image.dart",
+    "package:test_effective_mobile/data/models/character_model.dart"
+  ]
+}
