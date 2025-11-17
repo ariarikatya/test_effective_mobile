@@ -69,7 +69,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                       onPressed: () {
                         context.read<CharactersBloc>().add(LoadCharacters());
                       },
-                      child: const Text('Retry'),
+                      child: const Text('Повторить'),
                     ),
                   ],
                 ),

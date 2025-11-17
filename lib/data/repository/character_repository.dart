@@ -38,7 +38,6 @@ class CharacterRepository {
 
       return response.results;
     } catch (e) {
-      // If network fails, load from cache
       if (page == 1) {
         final cachedCharacters = await _database.getAllCharacters();
         return _convertToCharacterModels(cachedCharacters);

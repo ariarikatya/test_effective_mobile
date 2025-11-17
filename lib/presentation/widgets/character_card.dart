@@ -49,9 +49,9 @@ class _CharacterCardState extends State<CharacterCard>
 
   Color _getStatusColor() {
     switch (widget.character.status.toLowerCase()) {
-      case 'alive':
+      case 'жив':
         return Colors.green;
-      case 'dead':
+      case 'мертв':
         return Colors.red;
       default:
         return Colors.grey;

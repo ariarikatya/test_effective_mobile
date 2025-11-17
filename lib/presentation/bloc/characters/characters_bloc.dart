@@ -3,7 +3,6 @@ import 'package:equatable/equatable.dart';
 import 'package:test_effective_mobile/data/models/character_model.dart';
 import 'package:test_effective_mobile/data/repository/character_repository.dart';
 
-// Events
 abstract class CharactersEvent extends Equatable {
   @override
   List<Object?> get props => [];
@@ -30,7 +29,6 @@ class ToggleFavorite extends CharactersEvent {
   List<Object?> get props => [character, isFavorite];
 }
 
-// States
 abstract class CharactersState extends Equatable {
   @override
   List<Object?> get props => [];
@@ -85,7 +83,6 @@ class CharactersError extends CharactersState {
   List<Object?> get props => [message];
 }
 
-// BLoC
 class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
   final CharacterRepository _repository;
 

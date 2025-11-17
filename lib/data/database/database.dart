@@ -3,7 +3,6 @@ import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as p;
-import 'package:sqlite3_flutter_libs/sqlite3_flutter_libs.dart';
 
 part 'database.g.dart';
 
@@ -19,7 +18,7 @@ class Characters extends Table {
   TextColumn get locationName => text()();
   TextColumn get locationUrl => text()();
   TextColumn get image => text()();
-  TextColumn get episodes => text()(); // JSON string
+  TextColumn get episodes => text()();
   TextColumn get url => text()();
   TextColumn get created => text()();
   BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
@@ -35,7 +34,6 @@ class AppDatabase extends _$AppDatabase {
   @override
   int get schemaVersion => 1;
 
-  // Characters CRUD operations
   Future<List<Character>> getAllCharacters() => select(characters).get();
 
   Future<List<Character>> getFavoriteCharacters() =>

@@ -3,7 +3,6 @@ import 'package:equatable/equatable.dart';
 import 'package:test_effective_mobile/data/models/character_model.dart';
 import 'package:test_effective_mobile/data/repository/character_repository.dart';
 
-// Events
 abstract class FavoritesEvent extends Equatable {
   @override
   List<Object?> get props => [];
@@ -31,7 +30,6 @@ class RemoveFromFavorites extends FavoritesEvent {
 
 enum SortType { name, status, species }
 
-// States
 abstract class FavoritesState extends Equatable {
   @override
   List<Object?> get props => [];
@@ -70,7 +68,6 @@ class FavoritesError extends FavoritesState {
   List<Object?> get props => [message];
 }
 
-// BLoC
 class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {
   final CharacterRepository _repository;
 

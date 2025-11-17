@@ -47,7 +47,6 @@ class _HomeScreenState extends State<HomeScreen> {
               setState(() {
                 _currentIndex = index;
               });
-              // Перезагружаем избранное при переключении на эту вкладку
               if (index == 1) {
                 context.read<FavoritesBloc>().add(LoadFavorites());
               }
@@ -58,12 +57,12 @@ class _HomeScreenState extends State<HomeScreen> {
               NavigationDestination(
                 icon: Icon(Icons.people_outline, size: 24),
                 selectedIcon: Icon(Icons.people, size: 24),
-                label: 'Characters',
+                label: 'Персонажи',
               ),
               NavigationDestination(
                 icon: Icon(Icons.star_border, size: 24),
                 selectedIcon: Icon(Icons.star, size: 24),
-                label: 'Favorites',
+                label: 'Избранное',
               ),
             ],
           ),

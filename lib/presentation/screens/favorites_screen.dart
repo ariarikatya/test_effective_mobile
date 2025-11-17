@@ -22,12 +22,12 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Sort by'),
+        title: const Text('Сортировать'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             ListTile(
-              title: const Text('Name'),
+              title: const Text('По имени'),
               leading: const Icon(Icons.sort_by_alpha),
               onTap: () {
                 context.read<FavoritesBloc>().add(SortFavorites(SortType.name));
@@ -35,7 +35,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               },
             ),
             ListTile(
-              title: const Text('Status'),
+              title: const Text('По статусу'),
               leading: const Icon(Icons.favorite),
               onTap: () {
                 context.read<FavoritesBloc>().add(
@@ -45,7 +45,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               },
             ),
             ListTile(
-              title: const Text('Species'),
+              title: const Text('По виду'),
               leading: const Icon(Icons.pets),
               onTap: () {
                 context.read<FavoritesBloc>().add(
@@ -72,7 +72,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Favorites',
+                    'Избранное',
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -80,7 +80,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                   IconButton(
                     icon: const Icon(Icons.sort),
                     onPressed: _showSortDialog,
-                    tooltip: 'Sort',
+                    tooltip: 'Сортровать',
                   ),
                 ],
               ),
@@ -114,7 +114,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                 LoadFavorites(),
                               );
                             },
-                            child: const Text('Retry'),
+                            child: const Text('Повторить'),
                           ),
                         ],
                       ),
@@ -136,12 +136,12 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                             ),
                             const SizedBox(height: 24),
                             Text(
-                              'No favorites yet',
+                              'Пока нет избранных',
                               style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             const SizedBox(height: 8),
                             Text(
-                              'Add characters to your favorites\nfrom the main screen',
+                              'Добавь персонажа в избранное\nиз главного экрана',
                               textAlign: TextAlign.center,
                               style: Theme.of(context).textTheme.bodyMedium
                                   ?.copyWith(
@@ -197,7 +197,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
-                                  '${character.name} removed from favorites',
+                                  '${character.name} удалено из избранного',
                                 ),
                                 duration: const Duration(seconds: 2),
                               ),

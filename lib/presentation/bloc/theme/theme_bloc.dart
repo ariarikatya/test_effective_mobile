@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
-// Events
 abstract class ThemeEvent extends Equatable {
   @override
   List<Object?> get props => [];
@@ -10,7 +9,6 @@ abstract class ThemeEvent extends Equatable {
 
 class ToggleTheme extends ThemeEvent {}
 
-// States
 class ThemeState extends Equatable {
   final ThemeMode themeMode;
 
@@ -24,7 +22,6 @@ class ThemeState extends Equatable {
   List<Object?> get props => [themeMode];
 }
 
-// BLoC
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
   ThemeBloc() : super(const ThemeState()) {
     on<ToggleTheme>(_onToggleTheme);
