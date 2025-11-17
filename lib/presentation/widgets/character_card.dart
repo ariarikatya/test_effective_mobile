@@ -156,7 +156,9 @@ class _CharacterCardState extends State<CharacterCard>
                 Text(
                   widget.character.species,
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.textTheme.bodySmall?.color?.withOpacity(0.8),
+                    color: theme.textTheme.bodySmall?.color?.withValues(
+                      alpha: 0.8,
+                    ),
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -165,7 +167,9 @@ class _CharacterCardState extends State<CharacterCard>
                 Text(
                   widget.character.gender,
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.textTheme.bodySmall?.color?.withOpacity(0.7),
+                    color: theme.textTheme.bodySmall?.color?.withValues(
+                      alpha: 0.7,
+                    ),
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -174,7 +178,9 @@ class _CharacterCardState extends State<CharacterCard>
                 Text(
                   widget.character.location.name,
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.textTheme.bodySmall?.color?.withOpacity(0.6),
+                    color: theme.textTheme.bodySmall?.color?.withValues(
+                      alpha: 0.6,
+                    ),
                   ),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,

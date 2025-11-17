@@ -132,7 +132,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                               size: 100,
                               color: Theme.of(
                                 context,
-                              ).colorScheme.secondary.withOpacity(0.3),
+                              ).colorScheme.secondary.withValues(alpha: 0.3),
                             ),
                             const SizedBox(height: 24),
                             Text(
@@ -149,7 +149,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                         .textTheme
                                         .bodyMedium
                                         ?.color
-                                        ?.withOpacity(0.6),
+                                        ?.withValues(alpha: 0.6),
                                   ),
                             ),
                           ],
